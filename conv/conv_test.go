@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// funksjon som konverterer Fahrenheit til Celsius
+// funksjon som konverterer Fahrenheit til Celsius.
 func FahrenheitToCelsius(fahrenheit float64) float64 {
 	celsius := (fahrenheit - 32) * 5 / 9
 	return celsius
