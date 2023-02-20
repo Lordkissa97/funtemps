@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// funksjon som konverterer Fahrenheit til Celsius
+// funksjon som konverterer Fahrenheit til Celsius.
 func FahrenheitToCelsius(fahrenheit float64) float64 {
 	celsius := (fahrenheit - 32) * 5 / 9
 	return celsius
@@ -18,7 +18,7 @@ func TestFahrenheitToCelsius(t *testing.T) {
 	}
 
 	var tests = []test{
-		{Fahrenheit: 134, Celsius: 56.67},
+		{Fahrenheit: 270000000, Celsius: 1.499999822222222e+08},
 		{Fahrenheit: 32, Celsius: 0},
 	}
 	for _, v := range tests {
@@ -42,7 +42,7 @@ func TestCelsiusToFahrenheit(t *testing.T) {
 	}
 
 	var tests = []test{
-		{Celsius: 56.67, Fahrenheit: 134},
+		{Celsius: 15000000, Fahrenheit: 2.7000032e+07},
 		{Celsius: 0, Fahrenheit: 32},
 	}
 	for _, v := range tests {
@@ -66,7 +66,7 @@ func TestKelvinToCelsius(t *testing.T) {
 	}
 
 	var tests = []test{
-		{Kelvin: 329.82, Celsius: 56.67},
+		{Kelvin: 150000273.15, Celsius: 150000000},
 		{Kelvin: 273.15, Celsius: 0},
 	}
 	for _, v := range tests {
@@ -90,7 +90,7 @@ func TestCelsiusToKelvin(t *testing.T) {
 	}
 
 	var tests = []test{
-		{Celsius: 56.67, Kelvin: 329.82},
+		{Celsius: 150000000, Kelvin: 150000273.15},
 		{Celsius: 0, Kelvin: 273.15},
 	}
 	for _, v := range tests {
@@ -114,7 +114,7 @@ func TestKelvinToFahrenheit(t *testing.T) {
 	}
 
 	var tests = []test{
-		{Kelvin: 329.82, Fahrenheit: 134},
+		{Kelvin: 150000273.15, Fahrenheit: 2.70000032e+08},
 		{Kelvin: 273.15, Fahrenheit: 32},
 	}
 	for _, v := range tests {
@@ -138,7 +138,7 @@ func TestFahrenheitToKelvin(t *testing.T) {
 	}
 
 	var tests = []test{
-		{Fahrenheit: 134, Kelvin: 329.82},
+		{Fahrenheit: 270000000, Kelvin: 1.5000025537222221e+08},
 		{Fahrenheit: 32, Kelvin: 273.15},
 	}
 	for _, v := range tests {
