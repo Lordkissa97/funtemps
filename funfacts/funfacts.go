@@ -1,5 +1,7 @@
 package funfacts
 
+import "fmt"
+
 /*
 *
 
@@ -14,9 +16,6 @@ package funfacts
 	      Terra []string
 		  }
 */
-package main
-
-import "fmt"
 
 func main() {
 	fmt.Println("Temperature fun facts:")
